@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+    <header>
+        <h1>My Tasks</h1>
+        <p id="date-display"></p>
+    </header>
+
+    <div class="input-section">
+        <div class="input-group">
+            <input id="todoInput" placeholder="Add your tasks">
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="addBtn">Add Task</button>
+        </div>
+        <input id="search" placeholder="🔍 Search your tasks...">
+    </div>
+
+    <div class="stats-card">
+        <div class="progress-container">
+            <div class="progress-text">
+                <span>Progress</span>
+                <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-value" id="total">0</span>
+                <span class="stat-label">Total</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="completed">0</span>
+                <span class="stat-label">Done</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="pending">0</span>
+                <span class="stat-label">Pending</span>
+            </div>
+        </div>
+    </div>
+
+    <ul id="list"></ul>
+
+    <div id="empty" class="empty-state">
+        <p>Your list is empty. Start crushing goals!</p>
+    </div>
+
+    <div id="undo" class="undo-toast">
+        <span>Task removed</span>
+        <button id="undoBtn">Undo</button>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <h3>Edit Task</h3>
+            <input id="editInput" type="text">
+            <div class="modal-actions">
+                <button onclick="closeModal()" class="btn-secondary">Cancel</button>
+                <button id="saveEditBtn" class="btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="style.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Task Manager</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+    <header>
+        <h1>My Tasks</h1>
+        <p id="date-display"></p>
+    </header>
+
+    <div class="input-section">
+        <div class="input-group">
+            <input id="todoInput" placeholder="Add your tasks">
+            <button id="addBtn">Add Task</button>
+        </div>
+        <input id="search" placeholder="🔍 Search your tasks...">
+    </div>
+
+    <div class="stats-card">
+        <div class="progress-container">
+            <div class="progress-text">
+                <span>Progress</span>
+                <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-value" id="total">0</span>
+                <span class="stat-label">Total</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="completed">0</span>
+                <span class="stat-label">Done</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="pending">0</span>
+                <span class="stat-label">Pending</span>
+            </div>
+        </div>
+    </div>
+
+    <ul id="list"></ul>
+
+    <div id="empty" class="empty-state">
+        <p>Your list is empty. Start crushing goals!</p>
+    </div>
+
+    <div id="undo" class="undo-toast">
+        <span>Task removed</span>
+        <button id="undoBtn">Undo</button>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <h3>Edit Task</h3>
+            <input id="editInput" type="text">
+            <div class="modal-actions">
+                <button onclick="closeModal()" class="btn-secondary">Cancel</button>
+                <button id="saveEditBtn" class="btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="style.js"></script>
+</body>
+</html>
